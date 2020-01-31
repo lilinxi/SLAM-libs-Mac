@@ -23,11 +23,13 @@ cd ..
 cd ..
 
 # brew install opencv
+git clone https://github.com/lilinxi/opencv_contrib.git
 git clone https://github.com/lilinxi/opencv.git
 cd opencv/
 mkdir build
 cd build
-cmake ..
+# cmake ..
+cmake -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ..
 make
 sudo make install
 cd ..
