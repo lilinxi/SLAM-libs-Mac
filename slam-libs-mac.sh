@@ -94,6 +94,9 @@ sudo make install
 cd ..
 cd ..
 
+brew install flann
+# /usr/local/lib/libflann.dylib
+
 # git clone https://github.com/lilinxi/pcl.git
 # cd pcl
 # mkdir build
