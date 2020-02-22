@@ -30,6 +30,7 @@ mkdir build
 cd build
 # cmake ..
 cmake -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ..
+cmake -DOPENCV_ENABLE_NONFREE:BOOL=ON -DOPENCV_EXTRA_MODULES_PATH=../../opencv_contrib/modules ..
 make
 sudo make install
 cd ..
